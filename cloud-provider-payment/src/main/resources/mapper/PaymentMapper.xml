@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edw.springcloud.dao.PaymentDao">
+    <insert id="create"
+            useGeneratedKeys="true"
+            keyProperty="id"
+            parameterType="cn.edw.springcloud.domain.po.Payment">
+        <!--parameterType可以直接使用Payment，别名自动找-->
+        insert into payment(serial) values (#{payment.serial})
+    </insert>
+
+    <select id="getPaymentById" parameterType="int"
+            resultType="cn.edw.springcloud.domain.po.Payment">
+        select id,serial from payment
+    </select>
+</mapper>
