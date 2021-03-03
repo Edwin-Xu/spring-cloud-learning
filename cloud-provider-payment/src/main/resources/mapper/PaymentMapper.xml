@@ -13,6 +13,6 @@
 
     <select id="getPaymentById" parameterType="int"
             resultType="cn.edw.springcloud.domain.po.Payment">
-        select id,serial from payment
+        select id,serial from payment where id = #{id}
     </select>
 </mapper>
