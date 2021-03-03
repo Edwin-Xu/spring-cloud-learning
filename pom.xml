@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>payment</module>
+        <module>cloud-provider-payment</module>
     </modules>
     <name>springcloud</name>
     <description>spring cloud learning</description>
