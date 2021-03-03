@@ -9,6 +9,7 @@
     <modules>
         <module>cloud-provider-payment</module>
         <module>cloud-consumer-order</module>
+        <module>cloud-api-commons</module>
     </modules>
     <name>springcloud</name>
     <description>spring cloud learning</description>
@@ -52,6 +53,14 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.2.5</version>
+        </dependency>
+
+        <!--Hutool是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学
+        习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.1.0</version>
         </dependency>
 
         <dependency>

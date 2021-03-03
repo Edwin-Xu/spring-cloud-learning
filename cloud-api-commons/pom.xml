@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>cn.edw</groupId>
-            <artifactId>cloud-api-commons</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <artifactId>cloud-api-commons</artifactId>
 
 
 </project>

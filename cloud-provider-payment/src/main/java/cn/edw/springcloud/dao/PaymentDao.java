@@ -4,9 +4,6 @@ import cn.edw.springcloud.domain.po.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import javax.annotation.Resource;
-import java.util.*;
-
 /**
  * @author Edwin Xu
  * @date 3/3/2021 5:23 PM.
@@ -17,7 +14,7 @@ import java.util.*;
 
 @Mapper
 public interface PaymentDao {
-    int create(@Param("payment")Payment payment);
+    int create(@Param("payment") Payment payment);
 
     Payment getPaymentById(@Param("id") int id);
 
