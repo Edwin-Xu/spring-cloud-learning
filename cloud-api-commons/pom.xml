@@ -12,4 +12,7 @@
     <artifactId>cloud-api-commons</artifactId>
 
 
+    <dependencies>
+
+    </dependencies>
 </project>

@@ -1,0 +1,19 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    # 改主机映射后，集群环境下不能使用localhost
+    hostname: eureka8001.com
+  client:
+    # 不向注册中心注册自己
+    register-with-eureka: false
+    # false表示自己端就是注册中心，职责就是维护服务实例，不需要检索服务
+    fetch-registry: false
+    # 与Eureka Server交互的服务都需要这个地址
+    service-url:
+      # defatultZone: http://${ekueka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka8002.com:8002/eureka/
+
+spring:
+  application:
+    name: cloud-eureka-server
