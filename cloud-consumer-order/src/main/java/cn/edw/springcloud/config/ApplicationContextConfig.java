@@ -1,10 +1,9 @@
 package cn.edw.springcloud.config;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.*;
 
 /**
  * @author Edwin Xu
@@ -14,6 +13,8 @@ import java.util.*;
 @Configuration
 public class ApplicationContextConfig {
     @Bean
+    // 负载均衡
+    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }

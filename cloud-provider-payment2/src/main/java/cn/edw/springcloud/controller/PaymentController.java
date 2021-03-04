@@ -6,7 +6,6 @@ import cn.edw.springcloud.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import javax.websocket.server.PathParam;
 
 /**
@@ -27,13 +26,5 @@ public class PaymentController {
     @GetMapping("/get")
     public Response getPaymentById(@PathParam("id") int id){
         return paymentService.getPaymentById(id);
-    }
-
-    @Resource
-    private org.springframework.cloud.client.discovery.DiscoveryClient discoveryClient;
-
-    @GetMapping("/discovery")
-    public Response discovery(){
-        return Response.buildSuccess("ok",discoveryClient);
     }
 }

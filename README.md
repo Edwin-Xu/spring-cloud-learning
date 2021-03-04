@@ -6,4 +6,5 @@ Spring Cloud 学习实践代码
 - cloud-eureka-server:8001
 - cloud-eureka-server2:8002
 - cloud-provider-payment:8080
+- cloud-provider-payment2:8081
 - cloud-consumer-order:80
